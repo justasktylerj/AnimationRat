@@ -21,7 +21,8 @@ public class Sprite
 
         try 
         {
-            sprite = ImageIO.read(new File("res/" + file + ".png"));
+//            sprite = ImageIO.read(new File("res/" + file + ".png"));
+            sprite = ImageIO.read(new File(file + ".png"));
         } catch (IOException e) 
         {
             e.printStackTrace();
@@ -35,7 +36,7 @@ public class Sprite
 
         if (spriteSheet == null) 
         {
-            spriteSheet = loadSprite("AnimationSpriteSheet");
+            spriteSheet = loadSprite(RAT);
         }
 
         return spriteSheet.getSubimage(xGrid * TILE_SIZE, yGrid * TILE_SIZE, TILE_SIZE, TILE_SIZE);

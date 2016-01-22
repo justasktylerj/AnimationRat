@@ -13,7 +13,6 @@ public class Frame
     {
         this.frame = frame;
         this.duration = duration;
-        
     }
 
     public BufferedImage getFrame() 
@@ -24,6 +23,7 @@ public class Frame
     public void setFrame(BufferedImage frame) 
     {
         this.frame = frame;
+    	
     }
 
     public int getDuration() 
@@ -37,3 +37,4 @@ public class Frame
     }
 
 }
+
